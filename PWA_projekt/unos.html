@@ -39,7 +39,7 @@
                  </div>
                  <div class="form-item">
                      <span id="porukaAbout" class="bojaPoruke"></span>
-                    <label for="about">Kratki sadržaj vijesti (do 50 znakova)</label>
+                    <label for="about">Kratki sadržaj vijesti (do 100 znakova)</label>
                     <div class="form-field">
                         <textarea name="about" id="about" cols="30" rows="10" class="form-field-textual"></textarea>
                     </div>
@@ -102,13 +102,13 @@
          document.getElementById("porukaTitle").innerHTML="";
      }
 
-     // Kratki sadržaj (10-100 znakova)
+     // Kratki sadržaj (10-150 znakova)
      var poljeAbout = document.getElementById("about");
      var about = document.getElementById("about").value;
-     if (about.length < 10 || about.length > 100) {
+     if (about.length < 10 || about.length > 150) {
          slanjeForme = false;
          poljeAbout.style.border="1px dashed red";
-         document.getElementById("porukaAbout").innerHTML="Kratki sadržaj mora imati između 10 i 100 znakova!<br>";
+         document.getElementById("porukaAbout").innerHTML="Kratki sadržaj mora imati između 10 i 150 znakova!<br>";
      } else {
          poljeAbout.style.border="1px solid green";
          document.getElementById("porukaAbout").innerHTML="";

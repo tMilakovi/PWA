@@ -38,8 +38,10 @@
                 <li><a href="index.php">HOME</a></li>
                 <li><a href="kategorija.php?id=kultura">KULTURA</a></li>
                 <li><a href="kategorija.php?id=sport">SPORT</a></li>
+                <li><a href="unos.html">UNOS</a></li>
+                <li><a href="registracija.php">REGISTRACIJA</a></li>
+                <li><a href="prijava.php">PRIJAVA</a></li>
                 <li><a href="administracija.php">ADMINISTRACIJA</a></li>
-                <li><a href="unos.php">UNOS</a></li>
             </ul>
         </nav>
     </header>
