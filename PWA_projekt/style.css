@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'TitilliumWeb';
+    src: url('font/TitilliumWeb-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    width: 100%;
+    margin: 0px auto;
+    font-family: TitilliumWeb
+}
+
+#logo{
+    width: 20%;
+    height: 5em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0px auto;
+}
+#logo img{
+    height: 100%;
+}
+
+/*HEADER*/
+
+header {
+    background-color: dimgrey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 2em;
+}
+nav {
+    margin: 0px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+ul {
+    list-style-type: none;
+    margin: 0px auto;
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+        
+}
+li {
+    font-size: 80%;
+    width: 15%;
+    
+}
+nav a:hover{
+    transition: all 0.5s linear;
+    color: black;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    width: 100%;
+    padding: 5%;
+}
+
+/*MIDDLE*/
+
+section{
+    background-color: #f7f7f7;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+    border-top-style: solid;
+    border-top-color: #efefef;
+}
+
+section p, h3{
+    width: 80%;
+}
+
+#divArtikla1, #divArtikla2{
+    background-color: white;
+    width: 80%;
+    margin-bottom: 1em;
+}
+
+.hl{
+    height: 80%;
+    border-right-style: solid;
+    border-right-color: #efefef;
+    margin: 2.5em 0;
+}
+
+section article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 25em;
+}
+
+section article aside{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+section a{
+    text-decoration: none;
+}
+
+section a:hover{
+    transition: all 0.5s linear;
+    text-shadow: 0.2px 0.2px black;
+    text-decoration: underline;
+}
+
+.blue a{
+    color: blue;
+}
+.red a{
+    color:red;
+}
+
+#img{
+    width: 100%;
+    height: 40%;
+    margin: 5% 0;
+}
+
+/*FOOTER*/
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    border-top-style: solid;
+    border-top-color: #efefef;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+    /*HEADER*/
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav{
+        margin: 10px;
+        flex-direction: column;
+    }
+    header nav ul{
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    header nav ul li{
+        width: 80%;
+    }
+    header nav ul li a{
+        text-align: center;
+        border-style: solid none;
+        border-color: #efefef;
+        padding: 1em;
+        margin: 1em 0;
+        
+    }
+    /*SECTION*/
+    section p, h3, #divArtikla1, #divArtikla2{
+        width: 100%;
+    }
+    section h3{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    /*HEADER*/
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav{
+        margin: 10px;
+        flex-direction: column;
+    }
+    header nav ul{
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    header nav ul li{
+        width: 80%;
+    }
+    header nav ul li a{
+        text-align: center;
+        border-style: solid none;
+        border-color: #efefef;
+        padding: 1em;
+        margin: 1em 0;
+        
+    }
+    /*SECTION*/
+    section p, h3, #divArtikla1, #divArtikla2{
+        width: 100%;
+    }
+    section h3{
+        text-align: center;
+    }
+    section article{
+        flex-direction: column;
+        height: auto;
+    }
+    section #divArtikla1 aside, section #divArtikla2 aside{
+        width: 100%;
+        height: 100%;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+    
+    #img{
+        height: 80%;
+        margin: 0 auto;
+        
+    }
+}
+
+/*
+UNOS
+*/
+
+#articleUnos{
+    background-color: white;
+    width: 80%;
+    margin-bottom: 1em;
+    height: auto;
+    padding: 1em;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+
+/*
+CLANAK
+*/
+#imgClanak{
+    width: 60%;
+    height: 60%;
+    margin: 0px auto;
+}
+
+#articleClanak h4{
+    margin: 0px;
+    color: red;
+}
+
+section #articleClanak p{
+    width: 70%;
+    margin: 1em auto;
+}
+
+section #articleClanak h4{
+    width: 80%;
+}
+
+#articleClanak{
+    background-color: white;
+    width: 80%;
+    margin: 1em 0;
+}
+
+section #articleClanak{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    padding: 1em;
+}
+
+section #articleClanak aside{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    height: inherit;
+}
+
+.bojaPoruke{
+    color: red;
+}
+/*
+ADMINISTRACIJA
+*/
+#articleAdmin{
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    margin-bottom: 1em;
+    height: auto;
+    padding: 1em;
+    text-align: left;
+    justify-content: flex-start;
+    
+}
+#hrAdmin{
+    width: 100%;
+    height: 2px;
+    border-width: 0;
+    color: gainsboro;
+    background-color: gainsboro;
+}
+
+div, #imgAdmin{
+    margin: 1% 0 0 0;
+}
