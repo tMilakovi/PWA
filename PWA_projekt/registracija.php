@@ -113,7 +113,7 @@
             </div>
 
             <div class="form-item">
-                <button type="submit" value="Prijava" id="slanje">Prijava</button>
+                <button type="submit" value="Prijava" id="slanje" class="gumbic">Prijava</button>
                 <span><?php if($registriranKorisnik == 1){echo "Uspješno ste se registrirali!";} else if($registriranKorisnik == 2){echo"Nešto je pošlo po krivu tijekom registriranja!";} else{echo "";} ?></span>
                 
             </div>

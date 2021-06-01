@@ -193,9 +193,9 @@
                  </div>
                  <div class='form-item'>
                     <input type='hidden' name='id' class='form-field-textual' value='$id'>
-                     <button type='reset' value='Poništi'>Poništi</button>
-                     <button type='submit' value='Prihvati' name='update'>Prihvati</button>
-                     <button type='submit' value='Izbriši' name='delete'>Izbriši</button>
+                     <button type='reset' value='Poništi' class='gumbic'>Poništi</button>
+                     <button type='submit' value='Prihvati' name='update' class='gumbic'>Prihvati</button>
+                     <button type='submit' value='Izbriši' name='delete' class='gumbic'>Izbriši</button>
                  </div>
             </form>
                     ";

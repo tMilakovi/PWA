@@ -78,9 +78,9 @@
             </div>
 
             <div class="form-item">
-                <button type="submit" name='prijava' value="Prijava" id="slanje">Prijava</button>
+                <button type="submit" name='prijava' value="Prijava" id="slanje" class="gumbic">Prijava</button>
                 <a href="registracija.php" >
-                    <button type="button">Registriraj se</button>
+                    <button type="button" class="gumbic">Registriraj se</button>
                 </a>
             </div>
         </form>

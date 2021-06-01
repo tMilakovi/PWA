@@ -25,6 +25,19 @@ body {
     height: 100%;
 }
 
+.gumbic{
+    padding: 1em;
+    background-color: darkgrey;
+    color: floralwhite;
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+.gumbic:hover{
+    transition: all 0.5s linear;
+    color: black;
+}
+
 /*HEADER*/
 
 header {
